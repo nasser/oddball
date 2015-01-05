@@ -49,9 +49,8 @@ o.traditional
 ```
 
 ### Use Refs
-Refs need an API. This is coming next.
 ```javascript
-odd.refs.head = "0c41b640e0ea2d5a4cc3395a5c930a3c52ab7712";
+odd.updateRef("head", "0c41b640e0ea2d5a4cc3395a5c930a3c52ab7712");
 odd.retrieveObject("head");
 // { message: "Hello, world!", traditional: true }
 ```

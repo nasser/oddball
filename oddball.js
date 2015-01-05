@@ -32,6 +32,10 @@ Oddball.prototype.retrieveObject = function(hash) {
   return JSON.parse(this.retrieve(hash));
 }
 
+Oddball.prototype.updateRef = function(ref, value) {
+  this.refs[ref] = value;
+}
+
 Oddball.prototype.write = function(filename, cb) {
   zlib.gzip(JSON.stringify(this), function(err, res) {
     if(err) throw err;
