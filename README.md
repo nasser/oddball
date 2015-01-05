@@ -1,7 +1,7 @@
 Oddball
 =======
 
-A simple content addressable database, inspired by the core ideas behind git.
+A simple content addressable data store, inspired by the core ideas behind git.
 
 ## Status
 Experimental. Don't use for anything mission critical for a while.
