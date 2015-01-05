@@ -3,7 +3,7 @@ var zlib = require("zlib");
 var fs = require("fs");
 
 var Oddball = function(algorithm, digest) {
-  this.algorithm = algorithm || "sha1";
+  this.algorithm = algorithm || "sha256";
   this.digest = digest || "hex";
   
   this.data = {};
