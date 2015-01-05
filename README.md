@@ -10,10 +10,14 @@ Experimental. Don't use for anything mission critical for a while.
 Oddball does very little. It stores and retrieves data, and reads and writes to disk. That's about it. It is intended as a platform to build more powerful on.
 
 ### Create new store
+Create stores by specifying what hash algorithm and what digest encoding to use.
+
 ```javascript
 var Oddball = require("./oddball");
-var odd = new Oddball;
+var odd = new Oddball("sha1", "hex");
 ```
+
+Supported algorithms/encodings come from [Node's APIs](http://nodejs.org/api/crypto.html#crypto_crypto_createhash_algorithm). `'md5'`, `'sha256'`, and `'sha512'` are generally available as hash algorithms, and `'hex'`, `'binary'`, and `'base64'` are available as digest encodings. The default is `'sha1'` and `'hex'`, like git.
 
 ### Store string
 ```javascript
