@@ -7,7 +7,7 @@ A simple content addressable data store, inspired by the core ideas behind git.
 Experimental. Don't use for anything mission critical for a while.
 
 ## Usage
-Oddball does very little. It stores and retrieves data, and reads and writes to disk. That's about it. It is intended as a platform to build more powerful on.
+Oddball does very little. It stores and retrieves data, and reads and writes to disk. That's about it. It is intended as a platform to build more powerful abstractions on.
 
 ### Create new store
 Create stores by specifying what hash algorithm and what digest encoding to use.
